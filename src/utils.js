@@ -45,14 +45,14 @@ export const getSwingBlockVelocity = (engine, time) => {
     case successCount < 1:
       hard = 0
       break
-    case successCount < 1:
-      hard = 3
-      break
     case successCount < 10:
-      hard = 0.4
+      hard = 0.3
+      break
+    case successCount < 30:
+      hard = 0.5
       break
     case successCount < 60:
-      hard = 0.5
+      hard = 0.7
       break
     default:
       hard = 0.7
